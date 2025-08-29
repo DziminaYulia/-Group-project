@@ -6,12 +6,12 @@ header {
   background-color: #8bd9d9;
 }
 .hero {
-  height: 600px;
+  height: 400px;
   max-width: 1440px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(img/hero.png);
+  background-image: url(/img/hero.png);
   padding: 160px 20px 0 20px;
 }
