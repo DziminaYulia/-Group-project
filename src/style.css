@@ -1,26 +1,17 @@
-body{
-    background-color: aqua;
-
-}
-img{
-    color: white;
-}
-p{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 64px;
-    color: white;
-    padding: 280px 0  0 80px;
+body {
+  background-color: aqua;
 }
 
-header{
-    background-color: #8BD9D9;
+header {
+  background-color: #8bd9d9;
 }
-.hero{
-    height: 600px;
-    max-height: 1440px;
-    margin: 0 auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(/img/hero.png);
+.hero {
+  height: 600px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/img/hero.png);
+  padding: 160px 20px 0 20px;
 }
