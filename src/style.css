@@ -21,3 +21,8 @@ header {
   font-size: 60px;
   font-weight: 400;
 }
+
+.logo{
+  width: 100px;
+  height: 100px;
+}
