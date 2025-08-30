@@ -17,3 +17,8 @@ header {
   color: aliceblue;
   font-size: 60px;
 }
+
+.logo{
+  width: 100px;
+  height: 100px;
+}
