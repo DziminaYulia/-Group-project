@@ -1,13 +1,5 @@
-@import url("/src/aboutUs.css");
-body {
-  background-color: aqua;
-}
-
-header {
-  background-color: #8bd9d9;
-}
-.hero {
-  height: 400px;
+.aboutUstxt {
+  height: 600px;
   max-width: 1440px;
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -16,10 +8,5 @@ header {
   background-image: url(/img/hero.png);
   padding: 160px 20px 0 20px;
   color: aliceblue;
-  font-size: 60px;
-}
-
-.logo{
-  width: 100px;
-  height: 100px;
+  font-size: 15px;
 }
