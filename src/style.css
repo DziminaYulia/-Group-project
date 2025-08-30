@@ -14,4 +14,6 @@ header {
   background-size: cover;
   background-image: url(/img/hero.png);
   padding: 160px 20px 0 20px;
+  color: aliceblue;
+  font-size: 60px;
 }
