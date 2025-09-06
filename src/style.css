@@ -11,6 +11,8 @@ body {
 
 header {
   background-color: #8bd9d9;
+  display: flex;
+  justify-content: space-between;
 }
 .hero {
   height: 400px;
@@ -29,4 +31,16 @@ header {
 .logo{
   width: 100px;
   height: 100px;
+}
+.login{
+  width: 160px;
+  display: flex;
+  
+  margin-right: 140px;
+  gap: 4px;
+}
+
+.login button{
+  width: 100px;
+  height:65px;
 }
