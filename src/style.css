@@ -1,24 +1,71 @@
+
+@import url("/src/aboutUs.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
 body {
+  margin: 0;
+  padding: 0;
   background-color: #C4EBEB;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden; /* забороняє горизонтальний скрол */
 }
 
 header {
   background-color: #8bd9d9;
+  width: 100%;
+  box-sizing: border-box; /* враховує padding всередині 100% ширини */
 }
+
 .hero {
-  height: 400px;
-  max-width: 1440px;
-  margin: 0 auto;
+  width: 100%;
+  height: 100vh; /* на всю висоту екрану */
+  margin: 0;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-image: url(/img/hero.png);
-  padding: 160px 20px 0 20px;
+
+  display: flex;
+  justify-content: center; /* вирівнює текст по горизонталі */
+  align-items: center; /* вирівнює текст по вертикалі */
+
   color: aliceblue;
   font-size: 60px;
+  font-weight: 400;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-.logo{
+
+.logo {
   width: 100px;
   height: 100px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  margin-right: 850px;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+  opacity: 0.7;
 }
