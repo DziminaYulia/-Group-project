@@ -14,8 +14,13 @@ body {
 
 header {
   background-color: #8bd9d9;
+
   width: 100%;
   box-sizing: border-box; /* враховує padding всередині 100% ширини */
+
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .hero {
@@ -45,6 +50,7 @@ header {
   height: 100px;
 }
 
+
 .navbar {
   display: flex;
   align-items: center;
@@ -68,4 +74,17 @@ nav a {
 
 nav a:hover {
   opacity: 0.7;
+}
+
+.login{
+  width: 160px;
+  display: flex;
+  
+  margin-right: 140px;
+  gap: 4px;
+}
+
+.login button{
+  width: 100px;
+  height:65px;
 }
