@@ -261,3 +261,26 @@ const housingList = [
     ]
   }
 ];
+
+
+
+let listHouse = document.querySelector('.list-house');
+function renderProd(arr) {
+	arr.forEach(element => {
+		listHouse.innerHTML += `<div class="cardBlock">
+			<img class="cardImage" src="${element.photos[0]}" alt="house">
+			<p class="cardName">${element.country}</p>
+			<p class="cardDescription">${element.title}</p>
+			<p class="cardPrice">${element.description}</p>
+      <p class="cardPrice">${element.price}</p>
+      <p class="cardButton">${element.spots.map(spot => spot.name).join(', ')}</p>
+      <div class="cardButton">
+        <button>забронювати</button></a>
+			</div>
+		</div>`
+	});
+}
+
+renderProd(housingList)
+
+
