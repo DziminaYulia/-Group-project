@@ -329,6 +329,75 @@ const housingList = [
 
   {
     id: 22,
+    country: "Казахстан",
+    title: "Лампова квартира-студія в Алмати",
+    description: "Розташування біля озера Сайран",
+    price: "1654 грн/ніч",
+    photos: [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1319713571505039577/original/f2c6dcbd-d287-44dd-9547-d4c691a45a1a.jpeg?im_w=1200"
+    ],
+    spots: [
+      { name: "Місце 1", isAvailable: true },
+      { name: "Місце 2", isAvailable: true }
+    ]
+  },
+
+  {
+    id: 23,
+    country: "Монглогія",
+    title: "Стильне помешкання в Улан-Баторі",
+    description: "Поруч Сухбаатарська площа",
+    price: "1650 грн/ніч",
+    photos: [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1506090320342711398/original/cd6ab69a-2fe2-4aa4-8627-ea7e52c05cdd.jpeg?im_w=1200"
+    ],
+    spots: [
+      { name: "Місце 1", isAvailable: true },
+      { name: "Місце 2", isAvailable: true },
+      { name: "Місце 3", isAvailable: true }
+    ]
+  },
+
+  {
+    id: 24,
+    country: "Гренландія",
+    title: "Сектор кімнат у центрі міста",
+    description: "Доступна ціна і комфортне розташування",
+    price: "4109 грн/ніч",
+    photos: [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1432068338687259187/original/b40cb63f-b0a6-4f64-9706-7fca9573e411.jpeg?im_w=1200"
+    ],
+    spots: [
+      { name: "Місце 1", isAvailable: true },
+      { name: "Місце 2", isAvailable: true },
+      { name: "Місце 3", isAvailable: true },
+      { name: "Місце 4", isAvailable: true }
+    ]
+  },
+
+  {
+    id: 25,
+    country: "Ісландія",
+    title: "Невеликий гуртожиток-хата у Рейк'явіку",
+    description: "Свіжий ісландський мох)",
+    price: "4657 грн/ніч",
+    photos: [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1473024194323697613/original/1d4d21f7-6e73-48e0-bdd3-2a87b3b64a3b.jpeg?im_w=1200"
+    ],
+    spots: [
+      { name: "Місце 1", isAvailable: true },
+      { name: "Місце 2", isAvailable: true },
+      { name: "Місце 3", isAvailable: true },
+      { name: "Місце 4", isAvailable: true },
+      { name: "Місце 5", isAvailable: true },
+      { name: "Місце 6", isAvailable: true },
+      { name: "Місце 7", isAvailable: true },
+      { name: "Місце 8", isAvailable: true }
+    ]
+  },
+
+  {
+    id: 26,
     country: "Італія",
     title: "",
     description: "",
