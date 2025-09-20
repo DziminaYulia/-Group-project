@@ -10,3 +10,24 @@
   color: aliceblue;
   font-size: 15px;
 }
+
+.hero {
+  width: 100%;
+  height: 100vh; /* на всю висоту екрану */
+  margin: 0;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/img/hero.png);
+
+  display: flex;
+  justify-content: center; /* вирівнює текст по горизонталі */
+  align-items: center; /* вирівнює текст по вертикалі */
+
+  color: aliceblue;
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
+  box-sizing: border-box;
+}
