@@ -247,19 +247,7 @@ const housingList = [
     ]
   },
 
-  {
-    id: 17,
-    country: "Італія",
-    title: "",
-    description: "",
-    price: "350.00",
-    photos: [
-      ""
-    ],
-    spots: [
-      { name: "", isAvailable: true }
-    ]
-  }
+
 ];
 
 
