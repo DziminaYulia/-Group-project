@@ -4,25 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TravelHome</title>
+            <link rel="stylesheet" href="/src/style.css" />
   </head>
   
   <body>
     <header>
-      <img class="logo" src="img/THlogo.png" />
-    </header>
-
-<!-- навігація -->
+  <div class="navbar">
+    <img src="img/THlogo.png" alt="TravelHome Logo" class="logo">
+    <nav>
 <a href="../index.html">Головна</a>
 <a href="page2.html">Всі тури</a>
 <a href="houses.html">Проживання</a>
 <a href="aboutUs.html">Про нас</a>
-<a href="support.html">Підтримка</a>
 <a href="reviews.html">Відгуки</a>
+<a href="support.html">Підтримка</a>
+    </nav>
+     <button class="input">Реєстрація</button>
+  </div>
+    </header>
+<main>
+  <div class="registration">      
+      <div class="login"> 
+        <div>
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Email" name="email" required>
+         <input type="text" placeholder="Password" name="password" required>
+
+        </div>
+        <button class="sumbit">Увійти</button>
+   
+      
+      </div>
+  </div>
+</main>  
+<p class="bonus" >Зареєструйся та отримай бонуси</p>
+<!-- навігація -->
+
 <a href="trashbin.html"><img src="/img/bin.png"></a>
 
-    <h2>пусто</h2>
+    <h2>Сподобався сайт? Залиш коментар!</h2>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reviews Page</title>
+</head>
+<body>
 
 
+  <!-- Review Form -->
+  <input type="text" id="name" placeholder="Your Name" required>
+  <br>
+  <textarea id="review" placeholder="Write your review here" required></textarea>
+  <br>
+  <button onclick="submitReview()">Submit Review</button>
+
+  <h2>Reviews:</h2>
+  <div id="reviewsContainer"></div>
+
+  <script>
+    // Load saved reviews from localStorage
+    let reviews = JSON.parse(localStorage.getItem("reviews")) || [];
+
+    // Display saved reviews
+    function displayReviews() {
+      const container = document.getElementById("reviewsContainer");
+      container.innerHTML = "";
+      reviews.forEach(review => {
+        const div = document.createElement("div");
+        div.innerHTML = `<strong>${review.name}</strong>: <p>${review.text}</p><hr>`;
+        container.appendChild(div);
+      });
+    }
+
+    displayReviews(); // Show on page load
+
+    // Submit review
+    function submitReview() {
+      const name = document.getElementById("name").value.trim();
+      const text = document.getElementById("review").value.trim();
+
+      if (!name || !text) {
+        alert("Please fill in both name and review.");
+        return;
+      }
+
+      const newReview = { name, text };
+      reviews.push(newReview);
+      localStorage.setItem("reviews", JSON.stringify(reviews));
+
+      // Clear input fields
+      document.getElementById("name").value = "";
+      document.getElementById("review").value = "";
+
+      displayReviews();
+    }
+  </script>
 
 
 
