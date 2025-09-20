@@ -122,3 +122,10 @@ nav a:hover {
   font-weight: 800;
   text-align: center;
 }
+
+.cardImage{
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
