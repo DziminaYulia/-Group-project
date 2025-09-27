@@ -24,7 +24,7 @@ header {
 
 }
 
-<<<<<<< Updated upstream
+
 .profile-icon {
   width: 50px;
   height: 50px;
@@ -35,7 +35,7 @@ header {
 
 .profile-icon:hover {
   transform: scale(1.1);
-=======
+}
 .cart-button img {
   width: 60px; /* adjust size */
   height: auto;
@@ -52,7 +52,7 @@ header {
   width: 60px;
   height: auto;
   cursor: pointer;
->>>>>>> Stashed changes
+
 }
 
 
