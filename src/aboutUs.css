@@ -1,14 +1,20 @@
 .aboutUstxt {
-  height: 600px;
+  height: 700px;
   max-width: 1440px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(/img/hero.png);
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/img/hero.png);
+
   padding: 160px 20px 0 20px;
   color: aliceblue;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .hero {
