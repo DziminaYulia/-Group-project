@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TravelHome</title>
-            <link rel="stylesheet" href="/src/style.css" />
+            <link rel="stylesheet" href="src/style.css" />
   </head>
   
   <body>
@@ -41,21 +41,24 @@
 <!-- навігація -->
 
 
-    <h2>Підтримай нас донатом!</h2>
-
+<div class="donation-box">
+  <h2>Підтримай нас донатом!</h2>
 
   <!-- Donation Buttons -->
-  <button onclick="donate(10)">10 Гривень</button>
-  <button onclick="donate(50)">50 Гривень</button>
-  <button onclick="donate(100)">100 Гривень</button>
-  <button onclick="donate(200)">200 Гривень</button>
-  <button onclick="donate(500)">500 Гривень</button>
-  <button onclick="donate(1000)">1000 Гривень</button>
+  <div class="donation-buttons">
+    <button onclick="donate(10)">10 Гривень</button>
+    <button onclick="donate(50)">50 Гривень</button>
+    <button onclick="donate(100)">100 Гривень</button>
+    <button onclick="donate(200)">200 Гривень</button>
+    <button onclick="donate(500)">500 Гривень</button>
+    <button onclick="donate(1000)">1000 Гривень</button>
+  </div>
 
   <!-- Total Donated -->
-  <div>
+  <div class="donation-total">
     Ми зібрали: <span id="totalAmount">0</span> Гривень
   </div>
+</div>
 
   <script>
     // Retrieve the stored total donation amount from localStorage, if it exists

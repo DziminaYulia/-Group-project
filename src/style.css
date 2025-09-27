@@ -17,8 +17,44 @@ header {
 
   width: 100%;
   box-sizing: border-box; /* враховує padding всередині 100% ширини */
+  display: flex;
+  justify-content: space-between; /* pushes logo left, cart right */
+  align-items: center;
+
 
 }
+
+
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Makes it circular */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);
+}
+.cart-button img {
+  width: 60px; /* adjust size */
+  height: auto;
+
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space between cart and button */
+}
+
+.cart-button img {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+
+}
+
 
 .registration{
   display: none;
@@ -32,7 +68,7 @@ header {
   padding: 40px;
   border-radius: 8px;
 }
-
+x
 .hero {
   width: 100%;
   height: 100vh; /* на всю висоту екрану */
@@ -52,8 +88,18 @@ header {
   font-weight: 400;
   text-align: center;
   box-sizing: border-box;
-}
 
+  background-image: linear-gradient(
+    rgba(28, 144, 144, 0.5),
+    rgba(28, 144, 144, 0.5)
+
+    ),
+    url(/img/hero.png);
+
+  padding: 160px 20px 0 20px;
+  color: aliceblue;
+
+}
 
 .logo {
   width: 100px;
@@ -64,11 +110,23 @@ header {
 .navbar {
   display: flex;
   align-items: center;
-  gap: 10px;
   justify-content: space-between;
   padding: 10px 20px;
-  box-sizing: border-box;
 }
+
+.nav-center {
+  flex: 1;                /* take remaining space */
+  display: flex;
+  justify-content: center; /* center the links */
+  gap: 40px;              /* spacing between links */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 
 .input {
   background-color: #72b9b9;
@@ -164,6 +222,7 @@ nav a:hover {
   
 }
 
+
 #name, #review {
   width: 100%;
   max-width: 400px;
@@ -196,4 +255,70 @@ button:hover {
   padding: 10px;
   margin: 10px 0;
   border-radius: 4px;
+}
+.card {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;  
+  margin: 10px;     
+  padding: 10px;       
+  border: 1px solid #ccc; 
+  border-radius: 8px;   
+}
+
+.card img {
+  width: 400px;   
+  height: 350px;  
+  object-fit: cover; 
+  border-radius: 6px;
+}
+
+.donation-box {
+  text-align: center;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.donation-box h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #222;
+  font-weight: 600;
+}
+
+.donation-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* space between buttons */
+  margin-bottom: 20px;
+}
+
+.donation-buttons button {
+  padding: 10px 18px;
+  border: 1px solid #2a9d9d; /* slightly darker border */
+  border-radius: 8px;
+  background: #a9e7e6; /* light aqua like background */
+  color: #064949; /* dark teal text */
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.donation-buttons button:hover {
+  background: #90d8d7; /* darker aqua on hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.donation-total {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+
 }
