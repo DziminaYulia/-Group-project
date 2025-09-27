@@ -17,8 +17,44 @@ header {
 
   width: 100%;
   box-sizing: border-box; /* враховує padding всередині 100% ширини */
+  display: flex;
+  justify-content: space-between; /* pushes logo left, cart right */
+  align-items: center;
+
 
 }
+
+<<<<<<< Updated upstream
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Makes it circular */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);
+=======
+.cart-button img {
+  width: 60px; /* adjust size */
+  height: auto;
+
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space between cart and button */
+}
+
+.cart-button img {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+>>>>>>> Stashed changes
+}
+
 
 .registration{
   display: none;
@@ -32,7 +68,7 @@ header {
   padding: 40px;
   border-radius: 8px;
 }
-
+x
 .hero {
   width: 100%;
   height: 100vh; /* на всю висоту екрану */
@@ -52,8 +88,18 @@ header {
   font-weight: 400;
   text-align: center;
   box-sizing: border-box;
-}
 
+  background-image: linear-gradient(
+    rgba(28, 144, 144, 0.5),
+    rgba(28, 144, 144, 0.5)
+
+    ),
+    url(/img/hero.png);
+
+  padding: 160px 20px 0 20px;
+  color: aliceblue;
+
+}
 
 .logo {
   width: 100px;
@@ -64,11 +110,23 @@ header {
 .navbar {
   display: flex;
   align-items: center;
-  gap: 10px;
   justify-content: space-between;
   padding: 10px 20px;
-  box-sizing: border-box;
 }
+
+.nav-center {
+  flex: 1;                /* take remaining space */
+  display: flex;
+  justify-content: center; /* center the links */
+  gap: 40px;              /* spacing between links */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 
 .input {
   background-color: #72b9b9;
