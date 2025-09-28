@@ -4,83 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TravelHome</title>
-            <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
-  
+
   <body>
     <header>
-  <div class="navbar">
-    <img src="/img/THlogo.png" alt="TravelHome Logo" class="logo">
-    <nav>
-<a href="../index.html">Головна</a>
-<a href="page2.html">Всі тури</a>
-<a href="houses.html">Проживання</a>
-<a href="aboutUs.html">Про нас</a>
-<a href="reviews.html">Відгуки</a>
-<a href="support.html">Підтримка</a>
-    </nav>
-     <button class="input">Реєстрація</button>
-  </div>
-    </header>
-<main>
-  <div class="registration">      
-      <div class="login"> 
-        <div>
-          <input type="text" placeholder="Name" name="name" required>
-          <input type="text" placeholder="Email" name="email" required>
-         <input type="text" placeholder="Password" name="password" required>
+      <div class="navbar">
+        <img src="img/THlogo.png" alt="TravelHome Logo" class="logo" />
 
-        </div>
-        <button class="sumbit">Увійти</button>
-   
-      
+        <nav class="nav-center">
+          <a href="../index.html">Головна</a>
+          <a href="/src/page2.html">Всі тури</a>
+          <a href="/src/houses.html">Проживання</a>
+          <a href="/src/aboutUs.html">Про нас</a>
+          <a href="/src/reviews.html">Відгуки</a>
+          <a href="/src/support.html">Підтримка</a>
+        </nav>
+
+        <img src="img/bin.png" alt="Profile" class="profile-icon" />
+
+        <button class="input">Реєстрація</button>
       </div>
-  </div>
-</main>  
-<p class="bonus" >Зареєструйся та отримай бонуси</p>
-<!-- навігація -->
+    </header>
+    <main>
+      <div class="registration">
+        <div class="login">
+          <div>
+            <input type="text" placeholder="Name" name="name" required />
+            <input type="text" placeholder="Email" name="email" required />
+            <input
+              type="text"
+              placeholder="Password"
+              name="password"
+              required
+            />
+          </div>
+          <button class="sumbit">Увійти</button>
+        </div>
+      </div>
+    </main>
+    <p class="bonus">Зареєструйся та отримай бонуси</p>
+    <!-- навігація -->
 
+    <div class="donation-box">
+      <h2>Підтримай нас донатом!</h2>
 
-<div class="donation-box">
-  <h2>Підтримай нас донатом!</h2>
+      <!-- Donation Buttons -->
+      <div class="donation-buttons">
+        <button onclick="donate(10)">10 Гривень</button>
+        <button onclick="donate(50)">50 Гривень</button>
+        <button onclick="donate(100)">100 Гривень</button>
+        <button onclick="donate(200)">200 Гривень</button>
+        <button onclick="donate(500)">500 Гривень</button>
+        <button onclick="donate(1000)">1000 Гривень</button>
+      </div>
 
-  <!-- Donation Buttons -->
-  <div class="donation-buttons">
-    <button onclick="donate(10)">10 Гривень</button>
-    <button onclick="donate(50)">50 Гривень</button>
-    <button onclick="donate(100)">100 Гривень</button>
-    <button onclick="donate(200)">200 Гривень</button>
-    <button onclick="donate(500)">500 Гривень</button>
-    <button onclick="donate(1000)">1000 Гривень</button>
-  </div>
+      <!-- Total Donated -->
+      <div class="donation-total">
+        Ми зібрали: <span id="totalAmount">0</span> Гривень
+      </div>
+    </div>
 
-  <!-- Total Donated -->
-  <div class="donation-total">
-    Ми зібрали: <span id="totalAmount">0</span> Гривень
-  </div>
-</div>
+    <script>
+      // Retrieve the stored total donation amount from localStorage, if it exists
+      let totalDonated = parseInt(localStorage.getItem("totalDonated")) || 0;
 
-  <script>
-    // Retrieve the stored total donation amount from localStorage, if it exists
-    let totalDonated = parseInt(localStorage.getItem("totalDonated")) || 0;
-
-    // Update the displayed total amount
-    document.getElementById("totalAmount").innerText = totalDonated;
-
-    function donate(amount) {
-      totalDonated += amount;
-      
-      // Update the total in the UI
+      // Update the displayed total amount
       document.getElementById("totalAmount").innerText = totalDonated;
-      
-      // Save the updated total amount to localStorage
-      localStorage.setItem("totalDonated", totalDonated);
-    }
-  </script>
 
+      function donate(amount) {
+        totalDonated += amount;
 
+        // Update the total in the UI
+        document.getElementById("totalAmount").innerText = totalDonated;
 
-
-
-    </body>
+        // Save the updated total amount to localStorage
+        localStorage.setItem("totalDonated", totalDonated);
+      }
+    </script>
+  </body>
 </html>
