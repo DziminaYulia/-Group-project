@@ -46,21 +46,29 @@
     <p class="bonus">Зареєструйся та отримай бонуси</p>
 
     <div class="country">
-      <h2>Франція</h2>
+      <h2 id="country-name">Франція</h2>
       <img
         src="/img/france.jpg"
         alt="Італія але крутіше тур"
         style="max-width: 300px"
       />
 
-      <p>кількість людей<input type="number" /></p>
-      <p>вільних місць:10</p>
-      <input type="radio" name="meal" /> з сніданком, обідом та вечерею<br />
-      <input type="radio" name="meal" /> без сніданку, обіду та вечері<br />
-      <span>ціна: я сам хз</span>
-      <a href="transportFrance.html"><button>забронювати</button></a>
+      <p>Кількість людей: <input type="number" class="people-count" /></p>
+
+      <label>
+        <input type="radio" name="meal-spain" value="з харчуванням" /> з
+        харчуванням </label
+      ><br />
+      <label>
+        <input type="radio" name="meal-spain" value="без харчування" /> без
+        харчування </label
+      ><br />
+
+      <p class="price" data-price="250">Ціна за людину: 250 €</p>
+
+      <button class="book-button">забронювати</button>
     </div>
 
-    <script src="src/main.js"></script>
+    <script src="/src/main.js" defer></script>
   </body>
 </html>
