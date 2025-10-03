@@ -22,50 +22,33 @@
         </nav>
 
         <img src="/img/bin.png" alt="Profile" class="profile-icon" />
-
-        
       </div>
     </header>
     <main>
-      <div class="registration">
-        <div class="login">
-          <div>
-            <input type="text" placeholder="Name" name="name" required />
-            <input type="text" placeholder="Email" name="email" required />
-            <input
-              type="text"
-              placeholder="Password"
-              name="password"
-              required
-            />
-          </div>
-          <button class="sumbit">Увійти</button>
+      <p class="bonus">Зареєструйся та отримай бонуси</p>
+      <!-- навігація -->
+
+      <div class="donation-box">
+        <h2>Підтримай нас донатом!</h2>
+
+        <!-- Donation Buttons -->
+        <div class="donation-buttons">
+          <button onclick="donate(10)">10 Гривень</button>
+          <button onclick="donate(50)">50 Гривень</button>
+          <button onclick="donate(100)">100 Гривень</button>
+          <button onclick="donate(200)">200 Гривень</button>
+          <button onclick="donate(500)">500 Гривень</button>
+          <button onclick="donate(1000)">1000 Гривень</button>
+        </div>
+
+        <!-- Total Donated -->
+        <div class="donation-total">
+          Ми зібрали: <span id="totalAmount">0</span> Гривень
         </div>
       </div>
     </main>
-    <p class="bonus">Зареєструйся та отримай бонуси</p>
-    <!-- навігація -->
-
-    <div class="donation-box">
-      <h2>Підтримай нас донатом!</h2>
-
-      <!-- Donation Buttons -->
-      <div class="donation-buttons">
-        <button onclick="donate(10)">10 Гривень</button>
-        <button onclick="donate(50)">50 Гривень</button>
-        <button onclick="donate(100)">100 Гривень</button>
-        <button onclick="donate(200)">200 Гривень</button>
-        <button onclick="donate(500)">500 Гривень</button>
-        <button onclick="donate(1000)">1000 Гривень</button>
-      </div>
-
-      <!-- Total Donated -->
-      <div class="donation-total">
-        Ми зібрали: <span id="totalAmount">0</span> Гривень
-      </div>
-    </div>
-      <footer style="margin-top: 75px;">
-      <img src="/img/THlogo.png" alt="TravelHome Logo" class="logo-footer"/>
+    <footer style="margin-top: 75px">
+      <img src="/img/THlogo.png" alt="TravelHome Logo" class="logo-footer" />
       <div class="footer-info">
         <h3>Графік роботи</h3>
         <p>Пн.-Пт. 10:00-20:00</p>
@@ -94,7 +77,6 @@
 
         localStorage.setItem("totalDonated", totalDonated);
       }
-
     </script>
   </body>
 </html>
