@@ -10,7 +10,7 @@
   <body>
     <header>
       <div class="navbar">
-        <img src="img/THlogo.png" alt="TravelHome Logo" class="logo" />
+        <img src="/img/THlogo.png" alt="TravelHome Logo" class="logo" />
 
         <nav class="nav-center">
           <a href="../index.html">Головна</a>
@@ -21,7 +21,7 @@
           <a href="/src/support.html">Підтримка</a>
         </nav>
 
-        <img src="img/bin.png" alt="Profile" class="profile-icon" />
+        <img src="/img/bin.png" alt="Profile" class="profile-icon" />
 
         <button class="input">Реєстрація</button>
       </div>
@@ -44,22 +44,24 @@
       </div>
     </main>
     <p class="bonus">Зареєструйся та отримай бонуси</p>
+    <div class="country">
+      <h2>Іспанія</h2>
+      <img
+        src="/img/spain.jpg"
+        alt="Італія але крутіше тур"
+        style="max-width: 300px"
+      />
 
-    <h2>Іспанія</h2>
-    <img
-      src="/img/spain.jpg"
-      alt="Італія але крутіше тур"
-      style="max-width: 300px"
-    />
+      <p>Виберіть транспорт:</p>
+      <input type="radio" name="transport" id="bus2" /> Автобус<br />
+      <input type="radio" name="transport" id="plane2" /> Літак<br />
+      <input type="radio" name="transport" id="train2" /> Поїзд<br />
+      <input type="radio" name="transport" id="metro2" /> Метро<br />
+      <input type="radio" name="transport" id="ship2" /> Корабель<br />
 
-    <p>Виберіть транспорт:</p>
-    <input type="radio" name="transport" id="bus2" /> Автобус<br />
-    <input type="radio" name="transport" id="plane2" /> Літак<br />
-    <input type="radio" name="transport" id="train2" /> Поїзд<br />
-    <input type="radio" name="transport" id="metro2" /> Метро<br />
-    <input type="radio" name="transport" id="ship2" /> Корабель<br />
-
-    <span>ціна: 30 dollars</span>
-    <button class="buy-button">Замовити квиток</button>
+      <span>ціна: 30 dollars</span>
+      <button class="buy-button">Замовити квиток</button>
+    </div>
+    <script src="src/main.js"></script>
   </body>
 </html>

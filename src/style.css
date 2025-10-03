@@ -1,13 +1,11 @@
-
 @import url("/src/aboutUs.css");
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-
 body {
   margin: 0;
   padding: 0;
-  background-color: #C4EBEB;
+  background-color: #c4ebeb;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden; /* забороняє горизонтальний скрол */
 }
@@ -17,13 +15,8 @@ header {
 
   width: 100%;
   box-sizing: border-box; /* враховує padding всередині 100% ширини */
-  display: flex;
-  justify-content: space-between; /* pushes logo left, cart right */
-  align-items: center;
-
-
+  /* pushes logo left, cart right */
 }
-
 
 .profile-icon {
   width: 50px;
@@ -39,7 +32,6 @@ header {
 .cart-button img {
   width: 60px; /* adjust size */
   height: auto;
-
 }
 
 .header-right {
@@ -52,11 +44,9 @@ header {
   width: 60px;
   height: auto;
   cursor: pointer;
-
 }
 
-
-.registration{
+.registration {
   display: none;
   position: fixed;
   top: 200px;
@@ -68,37 +58,24 @@ header {
   padding: 40px;
   border-radius: 8px;
 }
-x
 .hero {
   width: 100%;
   height: 100vh; /* на всю висоту екрану */
   margin: 0;
-
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(/img/hero.png);
-
   display: flex;
-  justify-content: center; /* вирівнює текст по горизонталі */
+  justify-content: flex-start;
   align-items: center; /* вирівнює текст по вертикалі */
-
   color: aliceblue;
   font-size: 60px;
   font-weight: 400;
   text-align: center;
   box-sizing: border-box;
-
-  background-image: linear-gradient(
-    rgba(28, 144, 144, 0.5),
-    rgba(28, 144, 144, 0.5)
-
-    ),
-    url(/img/hero.png);
-
   padding: 160px 20px 0 20px;
   color: aliceblue;
-
 }
 
 .logo {
@@ -106,19 +83,19 @@ x
   height: 100px;
 }
 
-
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 40px;
   padding: 10px 20px;
 }
 
 .nav-center {
-  flex: 1;                /* take remaining space */
+  flex: 1; /* take remaining space */
   display: flex;
   justify-content: center; /* center the links */
-  gap: 40px;              /* spacing between links */
+  gap: 40px; /* spacing between links */
 }
 
 .header-right {
@@ -127,10 +104,9 @@ x
   gap: 15px;
 }
 
-
 .input {
   background-color: #72b9b9;
-   color: white;
+  color: white;
   font-weight: bold;
   transition: opacity 0.3s ease;
   width: fit-content;
@@ -142,12 +118,11 @@ x
 }
 
 .button-login:hover {
-    background-color: #45a049; /* Darker green on hover */
+  background-color: #45a049; /* Darker green on hover */
 }
 nav {
   display: flex;
   gap: 40px;
-
 }
 
 nav a {
@@ -162,24 +137,22 @@ nav a:hover {
   opacity: 0.7;
 }
 
-.login{
+.login {
   width: 160px;
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 13px;
-  
 }
 
-.sumbit{
+.sumbit {
   width: 100px;
   height: 30px;
   display: flex;
@@ -196,7 +169,7 @@ nav a:hover {
   padding: 10px;
 }
 
-.bonus{
+.bonus {
   color: #326363;
   font-size: 40px;
   font-weight: 800;
@@ -204,7 +177,7 @@ nav a:hover {
   text-align: center;
 }
 
-.form input{
+.form input {
   width: 170px;
   height: 30px;
   border-radius: 4px;
@@ -213,17 +186,15 @@ nav a:hover {
   text-align: center;
 }
 
-.cardImage{
+.cardImage {
   width: 400px;
   height: auto;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
-
-  
 }
 
-
-#name, #review {
+#name,
+#review {
   width: 100%;
   max-width: 400px;
   padding: 8px;
@@ -259,17 +230,17 @@ button:hover {
 .card {
   display: inline-block;
   vertical-align: top;
-  text-align: center;  
-  margin: 10px;     
-  padding: 10px;       
-  border: 1px solid #ccc; 
-  border-radius: 8px;   
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
 .card img {
-  width: 400px;   
-  height: 350px;  
-  object-fit: cover; 
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
   border-radius: 6px;
 }
 
@@ -280,7 +251,7 @@ button:hover {
   max-width: 420px;
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .donation-box h2 {
@@ -320,5 +291,26 @@ button:hover {
   font-size: 18px;
   font-weight: bold;
   color: #333;
+}
 
+.country {
+  margin: 20px;
+}
+.list-house {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cardBlock {
+  padding: 10px;
+  border: 2px solid #064949;
+  width: 400px;
+  border-radius: 8px;
+}
+
+.cardBlock img {
+  width: 380px;
+  height: auto;
 }

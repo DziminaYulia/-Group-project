@@ -10,7 +10,7 @@
   <body>
     <header>
       <div class="navbar">
-        <img src="img/THlogo.png" alt="TravelHome Logo" class="logo" />
+        <img src="/img/THlogo.png" alt="TravelHome Logo" class="logo" />
 
         <nav class="nav-center">
           <a href="../index.html">Головна</a>
@@ -21,7 +21,7 @@
           <a href="/src/support.html">Підтримка</a>
         </nav>
 
-        <img src="img/bin.png" alt="Profile" class="profile-icon" />
+        <img src="/img/bin.png" alt="Profile" class="profile-icon" />
 
         <button class="input">Реєстрація</button>
       </div>
@@ -66,19 +66,15 @@
     </div>
 
     <script>
-      // Retrieve the stored total donation amount from localStorage, if it exists
       let totalDonated = parseInt(localStorage.getItem("totalDonated")) || 0;
 
-      // Update the displayed total amount
       document.getElementById("totalAmount").innerText = totalDonated;
 
       function donate(amount) {
         totalDonated += amount;
 
-        // Update the total in the UI
         document.getElementById("totalAmount").innerText = totalDonated;
 
-        // Save the updated total amount to localStorage
         localStorage.setItem("totalDonated", totalDonated);
       }
     </script>
