@@ -84,7 +84,7 @@ const housingList = [
     description: "",
     price: "350.00",
     photos: [
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTMzNDEzNTYxMzM4MTMyMDI4Ng==/original/1161eb46-d6ba-460c-8a47-56e7b0dcda84.jpeg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5TtrLAHuDo3PmmG1wOwDhBpM16mDm2rvogA&s",
       "src/img_orend/Warsaw_1.png"
     ],
     spots: [
@@ -132,7 +132,7 @@ const housingList = [
     description: "Ну дуже по-багатому...",
     price: "€200/ніч",
     photos: [
-      "https://media.admagazine.ru/photos/61dc2d50977bd1a074418495/16:9/w_2560%2Cc_limit/Rue%2520de%2520Lappe-21.jpg"
+      "https://a0.muscache.com/im/pictures/1c1b5bb0-5c51-4d3c-bbfb-77503b571ea7.jpg"
     ],
     spots: [
       { name: "Місце", isAvailable: true }
@@ -146,7 +146,7 @@ const housingList = [
     description: "Чудовий район, щоб попоїсти круасанів",
     price: "€400/місяць",
     photos: [
-      "https://a0.muscache.com/im/pictures/miso/Hosting-931272203281182721/original/dd6fbf40-4861-42e3-b10e-de81e92f97fc.jpeg"
+      "https://archidea.com.ua/i/36/29/01/362901/871096d092cbdeab2b95fa713020a5ff-quality_80Xresize_crop_1Xallow_enlarge_0Xw_780Xh_478.jpg"
     ],
     spots: [
       { name: "Місце 1", isAvailable: true },
@@ -161,7 +161,7 @@ const housingList = [
     description: "Уютна, красива. Підходить для медового місяця :)",
     price: "€450/місяць",
     photos: [
-      "https://housinganywhere.imgix.net/unit_type/1351223/05ec6201-0ebf-4f94-8945-0115cf4f2d21.jpg?ixlib=react-9.8.1&auto=format&fit=crop&ar=1%3A1&q=45"
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/522621478.webp?k=1afb46160238a2d352048444f8ad44489fbbd9edef0d31cf6bb85f2bd266d101&o="
     ],
     spots: [
       { name: "Місце 1", isAvailable: true },

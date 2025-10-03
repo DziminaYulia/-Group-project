@@ -8,7 +8,7 @@
   </head>
   
   <body>
-    <header>
+   
  <header>
   <div class="navbar">
     <img src="/img/THlogo.png" alt="TravelHome Logo" class="logo">
@@ -24,9 +24,11 @@
       <a href="/src/support.html">Підтримка</a>
     </nav>
 
-    <img src="/img/bin.png" alt="Profile" class="profile-icon">
+    <a class="bit" href="/src/trashbin.html">
+          <img src="/img/bin.png" alt="Profile" class="profile-icon" />
+        </a>
 
-    <button class="input">Реєстрація</button>
+    
   </div>
 </header>
 <main>
@@ -43,8 +45,34 @@
       
       </div>
   </div>
+  <p class="bonus" >Зареєструйся та отримай бонуси</p>
+  <div class="country">
+      <h2 class="country-name">Іспанія</h2>
+      <img
+        src="/img/spain.jpg"
+        alt="Іспанія але крутіше тур"
+        style="max-width: 300px"
+      />
+      <p>Кількість людей: <input type="number" class="people-count" /></p>
+
+      <label>
+        <input type="radio" name="meal-spain" value="з харчуванням" /> з
+        харчуванням </label
+      ><br />
+      <label>
+        <input type="radio" name="meal-spain" value="без харчування" /> без
+        харчування </label
+      ><br />
+
+      <p class="price" data-price="631">Ціна за людину: 631€</p>
+
+      <button class="book-button">забронювати</button>
+    </div>
+
+
+
 </main>  
-<p class="bonus" >Зареєструйся та отримай бонуси</p>
+
 
 
 
@@ -81,7 +109,9 @@
         <p>вул. Соборна 7</p>
       </div>
     </footer>
- <script src="/src/main.js" ></script>
+
+    <script src="/src/main.js" defer></script>
+
 
     </body>
 </html>
