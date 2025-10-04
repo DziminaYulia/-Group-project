@@ -46,7 +46,7 @@
         <br />
         <textarea id="review" placeholder="Відгук" required></textarea>
         <br />
-        <button onclick="submitReview()">Submit Review</button>
+        <button onclick="submitReview()">Відправити відгук</button>
 
         <h2>Відгуки:</h2>
         <div id="reviewsContainer"></div>
@@ -93,7 +93,7 @@
             const text = document.getElementById("review").value.trim();
 
             if (!name || !text) {
-              alert("Please fill in both name and review.");
+              alert("Будь ласка, напишіть ім'я та відгук.");
               return;
             }
 
